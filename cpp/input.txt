@@ -1,2 +1,1 @@
-""aaaaaaaaabcd"
-"a*abe*h*c*cd""
+[1,6,9,14,16,70]\n81
