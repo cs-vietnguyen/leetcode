@@ -9,12 +9,8 @@ class Solution {
 public:
     int removeDuplicates(vector<int>& nums) {
         set <int> setNums;
-        vector<int> result(nums.size());
-        int iter = 0;
-
         for (auto x : nums) setNums.insert(x);
-
-        for (auto x : setNums) nums[iter++] = x;
+        copy(setNums.begin(), setNums.end(), nums.begin());
 
         return setNums.size();
     }
